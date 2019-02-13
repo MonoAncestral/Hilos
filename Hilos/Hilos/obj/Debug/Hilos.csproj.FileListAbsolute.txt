@@ -1,0 +1,9 @@
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe.config
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\bin\Debug\Hilos.pdb
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.csprojResolveAssemblyReference.cache
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.Cache
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.exe
+C:\Users\salas\Downloads\Hilos\Hilos\Hilos\obj\Debug\Hilos.pdb
