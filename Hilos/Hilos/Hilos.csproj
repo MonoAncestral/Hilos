@@ -55,10 +55,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formusuario.Designer.cs">
+      <DependentUpon>Formusuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SERVICIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERVICIO.Designer.cs">
+      <DependentUpon>SERVICIO.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formusuario.resx">
+      <DependentUpon>Formusuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,6 +85,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SERVICIO.resx">
+      <DependentUpon>SERVICIO.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +112,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\fondo-degradado-azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\70964015-azul-verde-degradado-de-fondo-azul-ilustración-vectorial.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

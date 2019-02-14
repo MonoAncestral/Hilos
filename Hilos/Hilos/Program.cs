@@ -16,7 +16,10 @@ namespace Hilos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Formusuario());
+            int[] inicioTurnos = { 1, 1, 1 };
+            Clases.ServicioTurnos st = new Clases.ServicioTurnos(inicioTurnos);
+
         }
     }
 }

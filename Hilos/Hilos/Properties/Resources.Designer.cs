@@ -73,9 +73,39 @@ namespace Hilos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _70964015_azul_verde_degradado_de_fondo_azul_ilustración_vectorial {
+            get {
+                object obj = ResourceManager.GetObject("70964015-azul-verde-degradado-de-fondo-azul-ilustración-vectorial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8335___Meowth_128 {
             get {
                 object obj = ResourceManager.GetObject("8335_-_Meowth-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo_degradado_azul {
+            get {
+                object obj = ResourceManager.GetObject("fondo-degradado-azul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap G {
+            get {
+                object obj = ResourceManager.GetObject("G", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

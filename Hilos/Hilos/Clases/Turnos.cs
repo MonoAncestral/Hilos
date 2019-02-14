@@ -11,9 +11,10 @@ namespace Hilos.Clases
     {
         public enum tipoTurno
         {
-            Fiduciario,
+            Caja,
             Servicios,
             Comercial,
+            Preferencial
         }
     }
 }
