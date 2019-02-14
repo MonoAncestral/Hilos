@@ -79,5 +79,26 @@ namespace Hilos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_mrubal_20180321_155704_imagenes_lv_otras_fuentes_captura_de_pantalla_2018_03_21_a_les_143548_kLuC_U441786090013HzE_992x558_LaVanguardia_Web {
+            get {
+                object obj = ResourceManager.GetObject("img_mrubal_20180321-155704_imagenes_lv_otras_fuentes_captura_de_pantalla_2018-03-" +
+                        "21_a_les_143548-kLuC-U441786090013HzE-992x558@LaVanguardia-Web", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
