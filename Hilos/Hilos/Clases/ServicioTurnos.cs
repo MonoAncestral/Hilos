@@ -10,12 +10,12 @@ namespace Hilos.Clases
     {
         public string id { get; set; }
         public int idAsesor { get; set; }
-        public int[] contador;
+        public int[] contador = { 0, 0, 0 };
         public Turnos.tipoTurno tipoTurno;
 
-        public ServicioTurnos(int []contador)
+        public ServicioTurnos()
         {
-            this.contador = contador;
+      
         }
     }
 }

@@ -25,7 +25,6 @@ C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csprojAssemblyRef
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
-C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.SERVICIO.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.cache
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.CoreCompileInputs.cache
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.exe

@@ -13,6 +13,11 @@ namespace Hilos
     public partial class Formusuario : Form
     {
 
+        private Boolean useClass = false;
+        private Clases.Turnos.tipoTurno tipoTurno;
+
+        #region AccionesPorDefecto
+
         public Formusuario()
         {
             InitializeComponent();
@@ -31,12 +36,13 @@ namespace Hilos
         private void button1_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 1;
+            useClass = true;
         }
-
 
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
+            tipoTurno = Clases.Turnos.tipoTurno.Comercial;
         }
 
         private void MyButtonClick(object sender, EventArgs e)
@@ -60,7 +66,55 @@ namespace Hilos
 
         private void button15_Click(object sender, EventArgs e)
         {
-
+            asignarTurno();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            useClass = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tipoTurno = Clases.Turnos.tipoTurno.Caja;
+            tabControl1.SelectedIndex = 2;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tipoTurno = Clases.Turnos.tipoTurno.Servicios;
+            tabControl1.SelectedIndex = 2;
+        }
+
+        #endregion
+
+        #region Funciones de asignación
+
+        void asignarTurno()
+        {
+            Clases.ServicioTurnos turno = new Clases.ServicioTurnos();
+
+            int position = 0;
+
+            if(Clases.Turnos.tipoTurno.Caja == tipoTurno)
+            {
+                position = 2;
+            }
+            else if(Clases.Turnos.tipoTurno.Comercial == tipoTurno)
+            {
+                position = 1;
+            }
+            else if (Clases.Turnos.tipoTurno.Servicios == tipoTurno)
+            {
+                position = 0;
+            }
+
+            turno.contador[position]++;
+            turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]); 
+
+            MessageBox.Show(turno.id);
+        }
+
+        #endregion
     }
 }
