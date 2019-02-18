@@ -18,3 +18,15 @@ C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.SERVICIO.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.Cache
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe.config
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.pdb
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csprojAssemblyReference.cache
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.SERVICIO.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.cache
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.CoreCompileInputs.cache
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.exe
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.pdb

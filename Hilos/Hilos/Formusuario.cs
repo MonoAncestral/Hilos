@@ -19,9 +19,12 @@ namespace Hilos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SERVICIO s = new SERVICIO();
-            s.Show();
-            this.Hide();
+            tabControl1.SelectedIndex = 1;
+        }
+
+        private void Formusuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
