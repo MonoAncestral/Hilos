@@ -39,10 +39,11 @@ namespace Hilos
             tabControl1.SelectedIndex = 2;
         }
 
-        public void MyButtonClick(object sender, EventArgs e)
+        private void MyButtonClick(object sender, EventArgs e)
         {
             addText((Button)sender);
         }
+
         private void addText(Button button)
         {
             cedula.AppendText(button.Text);
@@ -50,7 +51,16 @@ namespace Hilos
 
         private void button16_Click(object sender, EventArgs e)
         {
-           
+            string data = cedula.Text;
+            if (data.Length > 0)
+            {
+                cedula.Text = data.Substring(0, (data.Length - 1));
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
