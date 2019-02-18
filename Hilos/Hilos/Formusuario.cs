@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
 
 namespace Hilos
 {
@@ -15,6 +16,7 @@ namespace Hilos
         Clases.ServicioTurnos turno = new Clases.ServicioTurnos();
         private Boolean useClass = false;
         private Clases.Turnos.tipoTurno tipoTurno;
+        SpeechSynthesizer synthesizer = new SpeechSynthesizer();
 
         #region AccionesPorDefecto
 
@@ -121,8 +123,11 @@ namespace Hilos
                 turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]);
             }
 
-             
+            synthesizer.Volume = 100;  // 0...100
+            synthesizer.Rate = -2;     // -10...10
 
+            // Synchronous
+            synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + turno.id);
             MessageBox.Show(turno.id);
         }
 
