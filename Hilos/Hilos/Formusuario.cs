@@ -12,7 +12,7 @@ namespace Hilos
 {
     public partial class Formusuario : Form
     {
-
+        Clases.ServicioTurnos turno = new Clases.ServicioTurnos();
         private Boolean useClass = false;
         private Clases.Turnos.tipoTurno tipoTurno;
 
@@ -92,9 +92,10 @@ namespace Hilos
 
         void asignarTurno()
         {
-            Clases.ServicioTurnos turno = new Clases.ServicioTurnos();
+            
 
             int position = 0;
+            string idTurno = "";
 
             if(Clases.Turnos.tipoTurno.Caja == tipoTurno)
             {
@@ -103,14 +104,24 @@ namespace Hilos
             else if(Clases.Turnos.tipoTurno.Comercial == tipoTurno)
             {
                 position = 1;
+                idTurno = "SC";
             }
             else if (Clases.Turnos.tipoTurno.Servicios == tipoTurno)
             {
                 position = 0;
             }
-
             turno.contador[position]++;
-            turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]); 
+
+            if (idTurno != "")
+            {
+                turno.id = idTurno + string.Format("{0:000}", turno.contador[position]);
+            }
+            else
+            {
+                turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]);
+            }
+
+             
 
             MessageBox.Show(turno.id);
         }
