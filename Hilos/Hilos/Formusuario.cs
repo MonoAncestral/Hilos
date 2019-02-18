@@ -68,12 +68,16 @@ namespace Hilos
 
         private void button15_Click(object sender, EventArgs e)
         {
-            asignarTurno();
+            if (vacio(cedula))
+            {
+                asignarTurno();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             useClass = false;
+            tabControl1.SelectedIndex = 1;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -130,7 +134,24 @@ namespace Hilos
             synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + turno.id);
             MessageBox.Show(turno.id);
         }
+        private void cedula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
 
         #endregion
+
+        #region Funciones de validación
+        public Boolean vacio (TextBox text)
+        {
+            if(text.Text == "")
+            {
+                MessageBox.Show("Por favor ingrese un número");
+                return false;
+            }
+            return true;
+        }
+        #endregion
+        
     }
 }
