@@ -15,6 +15,13 @@ namespace Hilos
         public recibo()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.Selectable, false);
+        }
+
+        private void recibo_Load(object sender, EventArgs e)
+        {
+            tbFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            tbHora.Text = DateTime.Now.ToString("hh:mm:ss");
         }
     }
 }

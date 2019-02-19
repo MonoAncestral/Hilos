@@ -34,7 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +45,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -58,15 +55,21 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.cedula = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -122,7 +125,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(55, 718);
+            this.label7.Location = new System.Drawing.Point(50, 707);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(184, 13);
             this.label7.TabIndex = 2;
@@ -138,21 +141,12 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "GOLDEN BANK | TODOS LOS DERECHOS RESERVADOS";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Hilos.Properties.Resources.G1;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 249);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 184);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabControl1.Location = new System.Drawing.Point(349, 37);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -184,10 +178,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.button5);
+            this.tabPage2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -252,9 +248,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Controls.Add(this.cedula);
-            this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -277,7 +273,7 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(229, 314);
+            this.panel1.Location = new System.Drawing.Point(230, 289);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(374, 312);
             this.panel1.TabIndex = 7;
@@ -290,26 +286,6 @@
             this.button17.TabIndex = 11;
             this.button17.Text = "0";
             this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(56, 243);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(70, 53);
-            this.button16.TabIndex = 10;
-            this.button16.Text = "BORRAR";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(223, 243);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(70, 53);
-            this.button15.TabIndex = 9;
-            this.button15.Text = "ACEPTAR";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button12
             // 
@@ -395,21 +371,11 @@
             // cedula
             // 
             this.cedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cedula.Location = new System.Drawing.Point(302, 238);
+            this.cedula.Location = new System.Drawing.Point(303, 213);
             this.cedula.Name = "cedula";
             this.cedula.Size = new System.Drawing.Size(208, 40);
             this.cedula.TabIndex = 6;
             this.cedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cedula_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(270, 191);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(277, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "SIN PUNTOS NI ESPACIOS";
             // 
             // label5
             // 
@@ -421,6 +387,62 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "INGRESE SU CÉDULA";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Hilos.Properties.Resources._53567;
+            this.pictureBox2.Location = new System.Drawing.Point(772, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Hilos.Properties.Resources._53567;
+            this.pictureBox3.Location = new System.Drawing.Point(772, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(65, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(67, 243);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(59, 53);
+            this.button16.TabIndex = 10;
+            this.button16.Text = "BORRAR";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Location = new System.Drawing.Point(223, 243);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(59, 53);
+            this.button15.TabIndex = 9;
+            this.button15.Text = "ACEPTAR";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Hilos.Properties.Resources.G1;
+            this.pictureBox1.Location = new System.Drawing.Point(76, 249);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(158, 184);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Formusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,12 +451,13 @@
             this.ClientSize = new System.Drawing.Size(1230, 740);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formusuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formusuario";
             this.Load += new System.EventHandler(this.Formusuario_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -443,6 +466,9 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -462,7 +488,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox cedula;
@@ -480,5 +505,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

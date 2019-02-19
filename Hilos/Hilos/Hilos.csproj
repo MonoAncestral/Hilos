@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asesor1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asesor1.Designer.cs">
+      <DependentUpon>Asesor1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Asesor.cs" />
     <Compile Include="Clases\ServicioTurnos.cs" />
     <Compile Include="Clases\Turnos.cs" />
@@ -70,6 +76,9 @@
     <Compile Include="recibo.Designer.cs">
       <DependentUpon>recibo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Asesor1.resx">
+      <DependentUpon>Asesor1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +140,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\53567.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_95429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14713.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

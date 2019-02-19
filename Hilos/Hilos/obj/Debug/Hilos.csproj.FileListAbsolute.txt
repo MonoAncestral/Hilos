@@ -51,3 +51,15 @@ C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.cache
 C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.exe
 C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.pdb
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe.config
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.exe
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.pdb
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.pdb
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csprojResolveAssemblyReference.cache
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.recibo.resources
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.Cache
+C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources

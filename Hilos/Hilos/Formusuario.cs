@@ -77,15 +77,24 @@ namespace Hilos
         {
             if (vacio(cedula))
             {
+                recibo r = new recibo();
                 asignarTurno();
                 st.agregarcola(turno.id);
+                r.label2.Text = turno.id;
+                cedula.Text = "";
+                tabControl1.TabPages.Insert(1, tabPage1);
+                tabControl1.SelectTab(1);
+                tabControl1.TabPages.Remove(tabPage3);
+                r.Show();
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             useClass = false;
-            tabControl1.SelectedIndex = 1;
+            tabControl1.TabPages.Insert(1, tabPage2);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage1);
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -145,7 +154,7 @@ namespace Hilos
 
             // Synchronous
             synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + turno.id);
-            MessageBox.Show(turno.id);
+            
         }
 
         public void crearcola()
@@ -190,11 +199,26 @@ namespace Hilos
             crearcola();
             tabControl1.TabPages.Remove(tabPage2);
             tabControl1.TabPages.Remove(tabPage3);
+            this.Location = new Point(663, 0);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             siguiente();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Insert(1, tabPage1);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage2);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Insert(1, tabPage2);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage3);
         }
     }
 }
