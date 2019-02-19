@@ -12,6 +12,8 @@ namespace Hilos
 {
     public partial class Asesor1 : Form
     {
+        Clases.ServicioTurnos st = new Clases.ServicioTurnos();
+
         public Asesor1()
         {
             InitializeComponent();
@@ -19,20 +21,10 @@ namespace Hilos
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.No)
+            if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
-                
+                //siguiente en la cola
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Asesor1_Load(object sender, EventArgs e)

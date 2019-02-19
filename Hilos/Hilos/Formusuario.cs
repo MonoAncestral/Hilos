@@ -79,13 +79,21 @@ namespace Hilos
             {
                 recibo r = new recibo();
                 asignarTurno();
-                st.agregarcola(turno.id);
+
+                st.agregarcola(turno.id, turnos, 1);
                 r.label2.Text = turno.id;
                 cedula.Text = "";
                 tabControl1.TabPages.Insert(1, tabPage1);
                 tabControl1.SelectTab(1);
                 tabControl1.TabPages.Remove(tabPage3);
                 r.Show();
+                if (Clases.Turnos.tipoTurno.Comercial == tipoTurno || Clases.Turnos.tipoTurno.Servicios == tipoTurno)
+                {
+                    if (contadorAsesor == 3)
+                        contadorAsesor = 1;
+                    else
+                        contadorAsesor++;
+                }
             }
         }
 
@@ -117,10 +125,11 @@ namespace Hilos
         #endregion
 
         #region Funciones de asignación
-
+        string []turnos;
+        int contadorAsesor=1;
         void asignarTurno()
         {
-            
+           
 
             int position = 0;
             string idTurno = "";
@@ -128,15 +137,19 @@ namespace Hilos
             if(Clases.Turnos.tipoTurno.Caja == tipoTurno)
             {
                 position = 2;
+                
+                turnos = Clases;
             }
             else if(Clases.Turnos.tipoTurno.Comercial == tipoTurno)
             {
                 position = 1;
                 idTurno = "SC";
+                turnos = "asesor"+contadorAsesor;
             }
             else if (Clases.Turnos.tipoTurno.Servicios == tipoTurno)
             {
                 position = 0;
+                turnos = "asesor";
             }
             turno.contador[position]++;
 

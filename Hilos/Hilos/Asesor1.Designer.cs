@@ -57,7 +57,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "TURNO ACTUAL";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -68,7 +67,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "XXX";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Asesor1
             // 
