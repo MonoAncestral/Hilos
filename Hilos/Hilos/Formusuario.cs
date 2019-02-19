@@ -17,6 +17,7 @@ namespace Hilos
         private Boolean useClass = false;
         private Clases.Turnos.tipoTurno tipoTurno;
         SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+        Clases.ServicioTurnos st = new Clases.ServicioTurnos();
 
         #region AccionesPorDefecto
 
@@ -37,14 +38,20 @@ namespace Hilos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 1;
+            
             useClass = true;
+            tabControl1.TabPages.Insert(1, tabPage2);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage1);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 2;
             tipoTurno = Clases.Turnos.tipoTurno.Comercial;
+            tabControl1.TabPages.Insert(1, tabPage3);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage2);
         }
 
         private void MyButtonClick(object sender, EventArgs e)
@@ -71,6 +78,7 @@ namespace Hilos
             if (vacio(cedula))
             {
                 asignarTurno();
+                st.agregarcola(turno.id);
             }
         }
 
@@ -84,12 +92,17 @@ namespace Hilos
         {
             tipoTurno = Clases.Turnos.tipoTurno.Caja;
             tabControl1.SelectedIndex = 2;
+            tabControl1.TabPages.Insert(1, tabPage3);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             tipoTurno = Clases.Turnos.tipoTurno.Servicios;
-            tabControl1.SelectedIndex = 2;
+            tabControl1.TabPages.Insert(1, tabPage3);
+            tabControl1.SelectTab(1);
+            tabControl1.TabPages.Remove(tabPage2);
         }
 
         #endregion
@@ -134,12 +147,31 @@ namespace Hilos
             synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + turno.id);
             MessageBox.Show(turno.id);
         }
+
+        public void crearcola()
+        {
+            st = new Clases.ServicioTurnos(100);
+        }
+
         private void cedula_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
         }
-
+        
         #endregion
+
+        
+        public void siguiente () //cuando ya fue atendido para sacarlo de la cola
+        {
+            string x;
+            x=st.delcola();
+            if (x=="-666")
+                MessageBox.Show("Sin valor");
+            else
+                MessageBox.Show(x+" Salió de la cola");
+        }
+         
+        
 
         #region Funciones de validación
         public Boolean vacio (TextBox text)
@@ -152,6 +184,17 @@ namespace Hilos
             return true;
         }
         #endregion
-        
+
+        private void Formusuario_Load(object sender, EventArgs e)
+        {
+            crearcola();
+            tabControl1.TabPages.Remove(tabPage2);
+            tabControl1.TabPages.Remove(tabPage3);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            siguiente();
+        }
     }
 }

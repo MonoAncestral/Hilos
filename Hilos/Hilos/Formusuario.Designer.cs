@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -59,7 +60,6 @@
             this.cedula = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -118,6 +118,16 @@
             this.panel2.Size = new System.Drawing.Size(317, 742);
             this.panel2.TabIndex = 1;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(55, 718);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(184, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "ERIKA INFANTE / ANDRÉS LARGO";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -160,7 +170,6 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(843, 644);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -184,7 +193,6 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(843, 644);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -253,7 +261,6 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(843, 644);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -414,16 +421,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "INGRESE SU CÉDULA";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(55, 718);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "ERIKA INFANTE / ANDRÉS LARGO";
-            // 
             // Formusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +431,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "Formusuario";
             this.Text = "Formusuario";
+            this.Load += new System.EventHandler(this.Formusuario_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
