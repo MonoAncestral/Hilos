@@ -25,5 +25,10 @@ namespace Hilos
         {
             this.Location = new Point(0, 0);
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

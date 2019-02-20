@@ -63,3 +63,4 @@ C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.re
 C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.recibo.resources
 C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.Cache
 C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
+C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources

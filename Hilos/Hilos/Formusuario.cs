@@ -79,21 +79,12 @@ namespace Hilos
             {
                 recibo r = new recibo();
                 asignarTurno();
-
-                st.agregarcola(turno.id, turnos, 1);
                 r.label2.Text = turno.id;
                 cedula.Text = "";
                 tabControl1.TabPages.Insert(1, tabPage1);
                 tabControl1.SelectTab(1);
                 tabControl1.TabPages.Remove(tabPage3);
                 r.Show();
-                if (Clases.Turnos.tipoTurno.Comercial == tipoTurno || Clases.Turnos.tipoTurno.Servicios == tipoTurno)
-                {
-                    if (contadorAsesor == 3)
-                        contadorAsesor = 1;
-                    else
-                        contadorAsesor++;
-                }
             }
         }
 
@@ -125,31 +116,24 @@ namespace Hilos
         #endregion
 
         #region Funciones de asignación
-        string []turnos;
-        int contadorAsesor=1;
+    
         void asignarTurno()
         {
-           
-
             int position = 0;
             string idTurno = "";
 
             if(Clases.Turnos.tipoTurno.Caja == tipoTurno)
             {
                 position = 2;
-                
-                turnos = Clases;
             }
             else if(Clases.Turnos.tipoTurno.Comercial == tipoTurno)
             {
                 position = 1;
                 idTurno = "SC";
-                turnos = "asesor"+contadorAsesor;
             }
             else if (Clases.Turnos.tipoTurno.Servicios == tipoTurno)
             {
                 position = 0;
-                turnos = "asesor";
             }
             turno.contador[position]++;
 
@@ -161,6 +145,11 @@ namespace Hilos
             {
                 turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]);
             }
+
+            if (Clases.Turnos.tipoTurno.Servicios == tipoTurno || Clases.Turnos.tipoTurno.Comercial == tipoTurno)
+                st.agregarcola(turno.id, st.asesor, st.atrasa, st.frentea);
+            else
+                st.agregarcola(turno.id, st.colacaja, st.atrasc, st.frentec);
 
             synthesizer.Volume = 100;  // 0...100
             synthesizer.Rate = -2;     // -10...10
@@ -186,14 +175,22 @@ namespace Hilos
         public void siguiente () //cuando ya fue atendido para sacarlo de la cola
         {
             string x;
-            x=st.delcola();
+            x=st.delcola(st.frentec, st.colacaja, st.atrasc);
             if (x=="-666")
-                MessageBox.Show("Sin valor");
+                MessageBox.Show("");
             else
                 MessageBox.Show(x+" Salió de la cola");
         }
-         
-        
+
+        public void siguiente1() //FUNCIONA AQUÍ PERO NO EN ASESOR :)
+        {
+            string x;
+            x = st.delcola(st.frentea, st.asesor, st.atrasa);
+            if (x == "-666")
+                MessageBox.Show("");
+            else
+                MessageBox.Show(x + " Salió de la cola");
+        }
 
         #region Funciones de validación
         public Boolean vacio (TextBox text)
@@ -215,11 +212,6 @@ namespace Hilos
             this.Location = new Point(663, 0);
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-            siguiente();
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             tabControl1.TabPages.Insert(1, tabPage1);
@@ -232,6 +224,12 @@ namespace Hilos
             tabControl1.TabPages.Insert(1, tabPage2);
             tabControl1.SelectTab(1);
             tabControl1.TabPages.Remove(tabPage3);
+        }
+
+       
+        private void button18_Click_1(object sender, EventArgs e)
+        {
+            siguiente1();
         }
     }
 }

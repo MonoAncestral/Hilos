@@ -13,6 +13,8 @@ namespace Hilos
     public partial class Asesor1 : Form
     {
         Clases.ServicioTurnos st = new Clases.ServicioTurnos();
+        Form1 f = new Form1();
+        Formusuario fu = new Formusuario();
 
         public Asesor1()
         {
@@ -23,8 +25,18 @@ namespace Hilos
         {
             if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
-                //siguiente en la cola
+                fu.button18.PerformClick();
             }
+        }
+
+        public void siguiente1() //cuando ya fue atendido para sacarlo de la cola
+        {
+            string x;
+            x = st.delcola(st.frentea, st.asesor, st.atrasa);
+            if (x == "-666")
+                MessageBox.Show("");
+            else
+                MessageBox.Show(x + " Salió de la cola");
         }
 
         private void Asesor1_Load(object sender, EventArgs e)
