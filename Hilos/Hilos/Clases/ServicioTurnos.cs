@@ -19,9 +19,6 @@ namespace Hilos.Clases
         public string[] colacaja;
         public string[] asesor;
 
-        public ServicioTurnos()
-        {
-        }
 
         public ServicioTurnos(int max)
         {

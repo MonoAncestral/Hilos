@@ -9,6 +9,7 @@ namespace Hilos
 {
     static class Program
     {
+        static Clases.ServicioTurnos servicio = new Clases.ServicioTurnos(100);
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -24,6 +25,7 @@ namespace Hilos
             Thread hiloAsesor = new Thread(g2);
             hiloAsesor.Start();
             Application.Run(new Formusuario());
+            
 
         }
 
@@ -34,6 +36,18 @@ namespace Hilos
         static void asesor()
         {
             Application.Run(new Asesor1());
+        }
+
+        public static void hola()
+        {
+            if (servicio.colavacia(0))
+            {
+                MessageBox.Show("no sé que signifique ");
+            }
+            else
+            {
+                MessageBox.Show("chao");
+            }
         }
         
     }
