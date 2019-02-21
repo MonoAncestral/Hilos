@@ -12,7 +12,7 @@ namespace Hilos
 {
     public partial class Asesor1 : Form
     {
-        Clases.ServicioTurnos st = new Clases.ServicioTurnos(100);
+
         Form1 f = new Form1();
         Formusuario fu = new Formusuario();
 
@@ -26,14 +26,13 @@ namespace Hilos
             if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
                 fu.button18.PerformClick();
-                Hilos.Program.hola(); //IMPORTANTE ESTE MÉTODO ESTÁ EN EL MAIN Y SE EJECUTA SIEMPRE CON LA MISMA INSTANCIA
             }
         }
 
         public void siguiente1() //cuando ya fue atendido para sacarlo de la cola
         {
             string x;
-            x = st.delcola(st.frentea, st.asesor, st.atrasa);
+            x = Program.servicio.delcola(Program.servicio.frentea, Program.servicio.asesor, Program.servicio.atrasa);
             if (x == "-666")
                 MessageBox.Show("");
             else

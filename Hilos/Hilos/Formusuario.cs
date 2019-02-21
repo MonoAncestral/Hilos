@@ -13,12 +13,10 @@ namespace Hilos
 {
     public partial class Formusuario : Form
     {
-      //  Clases.ServicioTurnos turno = new Clases.ServicioTurnos();
+
         private Boolean useClass = false;
         private Clases.Turnos.tipoTurno tipoTurno;
         SpeechSynthesizer synthesizer = new SpeechSynthesizer();
-
-
         #region AccionesPorDefecto
 
         public Formusuario()
@@ -34,9 +32,6 @@ namespace Hilos
             button13.Click += new EventHandler(MyButtonClick);
             button14.Click += new EventHandler(MyButtonClick);
             button17.Click += new EventHandler(MyButtonClick);
-            Hilos.Program.hola();
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,7 +77,7 @@ namespace Hilos
             {
                 recibo r = new recibo();
                 asignarTurno();
-               // r.label2.Text = turno.id;
+                r.label2.Text = Program.servicio.id;
                 cedula.Text = "";
                 tabControl1.TabPages.Insert(1, tabPage1);
                 tabControl1.SelectTab(1);
@@ -138,34 +133,30 @@ namespace Hilos
             {
                 position = 0;
             }
-           // turno.contador[position]++;
+            Program.servicio.contador[position]++;
 
             if (idTurno != "")
             {
-            //    turno.id = idTurno + string.Format("{0:000}", turno.contador[position]);
+                Program.servicio.id = idTurno + string.Format("{0:000}", Program.servicio.contador[position]);
             }
             else
             {
-             //   turno.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", turno.contador[position]);
+                Program.servicio.id = tipoTurno.ToString().Substring(0, 1) + string.Format("{0:000}", Program.servicio.contador[position]);
             }
 
-            /*if (Clases.Turnos.tipoTurno.Servicios == tipoTurno || Clases.Turnos.tipoTurno.Comercial == tipoTurno)
-               // st.agregarcola(turno.id, st.asesor, st.atrasa, st.frentea);
-            else*/
-               // st.agregarcola(turno.id, st.colacaja, st.atrasc, st.frentec);
+            if (Clases.Turnos.tipoTurno.Servicios == tipoTurno || Clases.Turnos.tipoTurno.Comercial == tipoTurno)
+                Program.servicio.agregarcola(Program.servicio.id, Program.servicio.asesor, Program.servicio.atrasa, Program.servicio.frentea);
+            else
+                Program.servicio.agregarcola(Program.servicio.id, Program.servicio.colacaja, Program.servicio.atrasc, Program.servicio.frentec);
 
             synthesizer.Volume = 100;  // 0...100
             synthesizer.Rate = -2;     // -10...10
 
             // Synchronous
-          //  synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + turno.id);
+            synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + Program.servicio.id);
             
         }
 
-        public void crearcola()
-        {
-           // st = new Clases.ServicioTurnos(100);
-        }
 
         private void cedula_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -175,25 +166,25 @@ namespace Hilos
         #endregion
 
         
-      /*  public void siguiente () //cuando ya fue atendido para sacarlo de la cola
+        public void siguiente () //cuando ya fue atendido para sacarlo de la cola
         {
             string x;
-           // x=st.delcola(st.frentec, st.colacaja, st.atrasc);
+            x=Program.servicio.delcola(Program.servicio.frentec, Program.servicio.colacaja, Program.servicio.atrasc);
             if (x=="-666")
                 MessageBox.Show("");
             else
                 MessageBox.Show(x+" Salió de la cola");
         }
-        */
-       /* public void siguiente1() //FUNCIONA AQUÍ PERO NO EN ASESOR :)
+
+        public void siguiente1() //FUNCIONA AQUÍ PERO NO EN ASESOR :)
         {
             string x;
-           // x = st.delcola(st.frentea, st.asesor, st.atrasa);
+            x = Program.servicio.delcola(Program.servicio.frentea, Program.servicio.asesor, Program.servicio.atrasa);
             if (x == "-666")
                 MessageBox.Show("");
             else
                 MessageBox.Show(x + " Salió de la cola");
-        }*/
+        }
 
         #region Funciones de validación
         public Boolean vacio (TextBox text)
@@ -208,8 +199,7 @@ namespace Hilos
         #endregion
 
         private void Formusuario_Load(object sender, EventArgs e)
-        {
-            crearcola();
+        { 
             tabControl1.TabPages.Remove(tabPage2);
             tabControl1.TabPages.Remove(tabPage3);
             this.Location = new Point(663, 0);
@@ -232,7 +222,7 @@ namespace Hilos
        
         private void button18_Click_1(object sender, EventArgs e)
         {
-           //siguiente1();
+            siguiente1();
         }
     }
 }
