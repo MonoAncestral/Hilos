@@ -66,3 +66,16 @@ C:\Users\salas\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
 C:\xampp\htdocs\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.recibo.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\bin\Debug\Hilos.exe.config
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\bin\Debug\Hilos.exe
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\bin\Debug\Hilos.pdb
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.csprojAssemblyReference.cache
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.recibo.resources
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.cache
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.csproj.CoreCompileInputs.cache
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.exe
+C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.pdb

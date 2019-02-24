@@ -71,9 +71,8 @@ namespace Hilos.Clases
         public string delcola(int frente, string[]cola, int atras)
         {
             string n = "-666";
-            if (colavacia(frente))
-                MessageBox.Show("Cola vacía");
-            else
+            if (!colavacia(frente))
+            
             {
                 n = cola[frente];
                 if (frente == atras)
