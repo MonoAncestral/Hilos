@@ -13,7 +13,7 @@ namespace Hilos
     public partial class Asesor1 : Form
     {
 
-        Form1 f = new Form1();
+       
         Formusuario fu = new Formusuario();
 
         public Asesor1()
@@ -29,12 +29,14 @@ namespace Hilos
             if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
                 siguienteasesor();
+               
+
             }
         }
 
         public void siguienteasesor() //cuando ya fue atendido para sacarlo de la cola
         {
-
+            
             string x;
             x = Program.servicio.delcola(Program.servicio.frentea, Program.servicio.asesor, Program.servicio.atrasa);
             if (x == "-666")
@@ -45,15 +47,26 @@ namespace Hilos
             else
             {
                 label1.Text = x;
+                Hilos.Program.set(x);
                 if (x.Contains("SC"))
+                {
                     label3.Text = "Asesoría se servicios";
+                }
+
                 else
+                {
                     label3.Text = "Asesoría comercial";
-                if (button5.Text == "INICIAR")
-                    button5.Text = "SIGUIENTE";
+                    if (button5.Text == "INICIAR")
+                    {
+                        button5.Text = "SIGUIENTE";
+                    }
+                       
+                }
+
                 
 
             }
+            
         }
 
         public void siguientecaja() //cuando ya fue atendido para sacarlo de la cola
