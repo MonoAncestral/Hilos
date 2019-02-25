@@ -12,10 +12,17 @@ namespace Hilos
 {
     public partial class Asesor1 : Form
     {
-
-        public Asesor1()
+        public int id;
+        public Asesor1(int id )
         {
             InitializeComponent();
+            id = this.id;
+
+            MessageBox.Show(id + "");
+            if(id != 0)
+            {
+                this.Location = new Point((412 * id), 400);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -42,10 +49,13 @@ namespace Hilos
             else
             {
                 label1.Text = x;
-                Hilos.Program.set1(x);
+   
+                 Hilos.Program.set(x, id);
+
+                
                 if (x.Contains("SC"))
                 {
-                    label3.Text = "Asesoría se servicios";
+                    label3.Text = "Asesoría de servicios";
                 }
 
                 else

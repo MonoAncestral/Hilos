@@ -82,3 +82,6 @@ C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilo
 C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Asesor2.resources
 C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Asesor3.resources
 C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilos.Caja1.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor2.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor3.resources
+C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Caja1.resources

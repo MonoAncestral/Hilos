@@ -12,9 +12,11 @@ namespace Hilos
 {
     public partial class Caja1 : Form
     {
-        public Caja1()
+        private int id;
+        public Caja1(int id )
         {
             InitializeComponent();
+            id = this.id;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace Hilos
 
             {
                 label1.Text = x;
-                Hilos.Program.set4(x);
+                Hilos.Program.set(x, id);
                 if (button5.Text == "INICIAR")
                 {
                     button5.Text = "SIGUIENTE";

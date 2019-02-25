@@ -45,7 +45,7 @@ namespace Hilos
             else
             {
                 label1.Text = x;
-                Hilos.Program.set2(x);
+               // Hilos.Program.set2(x);
                 if (x.Contains("SC"))
                 {
                     label3.Text = "Asesoría se servicios";

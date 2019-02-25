@@ -25,68 +25,59 @@ namespace Hilos
             ThreadStart g = new ThreadStart(start);
             Thread hilo = new Thread(g);
             hilo.Start();
-            ThreadStart g2 = new ThreadStart(asesor);
+
+   
+            ThreadStart g2 = new ThreadStart(() => asesor(0));
             Thread hiloAsesor = new Thread(g2);
             hiloAsesor.Start();
 
-            ThreadStart g3 = new ThreadStart(asesor2);
-            Thread hiloAsesor2 = new Thread(g3);
+            ThreadStart g4 = new ThreadStart(() => asesor(1));
+            Thread hiloAsesor2 = new Thread(g4);
             hiloAsesor2.Start();
 
-            ThreadStart g4 = new ThreadStart(asesor3);
-            Thread hiloAsesor3 = new Thread(g4);
+            ThreadStart g5 = new ThreadStart(() => asesor(2));
+            Thread hiloAsesor3 = new Thread(g5);
             hiloAsesor3.Start();
 
-            ThreadStart g5 = new ThreadStart(Caja1);
-            Thread hiloCaja1 = new Thread(g5);
+
+            ThreadStart g3 = new ThreadStart(Caja1);
+            Thread hiloCaja1 = new Thread(g3);
             hiloCaja1.Start();
+
             frmGeneral = new Form1();
             frmGeneral.Show();
 
 
         }
             
-        public static void set1(string t)
+        public static void set(string t, int id)
         {
-            frmGeneral.exe(t, frmGeneral.label7);
-        }
+            MessageBox.Show(id.ToString());
+            switch (id)
+            {
+                case 0: frmGeneral.exe(t, frmGeneral.label7); break;
+                case 1: frmGeneral.exe(t, frmGeneral.label8); break;
+                case 2: frmGeneral.exe(t, frmGeneral.label9); break;
+                case 3: frmGeneral.exe(t, frmGeneral.label10); break;
+            }
+            
 
-
-        public static void set2(string t)
-        {
-            frmGeneral.exe(t, frmGeneral.label8);
-        }
-
-        public static void set3(string t)
-        {
-            frmGeneral.exe(t, frmGeneral.label9);
-        }
-
-        public static void set4(string t)
-        {
-            frmGeneral.exe(t, frmGeneral.label10);
         }
 
         static void start()
         {
             Application.Run(new Formusuario());
+        }
 
-        }
-        static void asesor()
+        static void asesor(int id)
         {
-            Application.Run(new Asesor1());
+
+            Application.Run(new Asesor1(3));
         }
-        static void asesor2()
-        {
-            Application.Run(new Asesor2());
-        }
-        static void asesor3()
-        {
-            Application.Run(new Asesor3());
-        }
+
         static void Caja1()
         {
-            Application.Run(new Caja1());
+            Application.Run(new Caja1(3));
         }
 
 
