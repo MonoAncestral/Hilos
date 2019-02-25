@@ -27,9 +27,16 @@ namespace Hilos
 
             synthesizer.Volume = 100;  // 0...100
             synthesizer.Rate = -2;     // -10...10
-
+            Console.Beep(3000, 500);
             // Synchronous
-            synthesizer.SpeakAsync("TURNO " + t +  " PASAR A ASESOR NÚMERO 1");
+            if (t2==label7)
+                synthesizer.SpeakAsync("TURNO " + t +  ", CAJA NÚMERO 1");
+            if (t2 == label8)
+                synthesizer.SpeakAsync("TURNO " + t + ", CAJA NÚMERO 2");
+            if (t2 == label9)
+                synthesizer.SpeakAsync("TURNO " + t + ", CAJA NÚMERO 3");
+            if (t2 == label10)
+                synthesizer.SpeakAsync("TURNO " + t + ", CAJA NÚMERO 4");
         }
 
         private void label5_Click(object sender, EventArgs e)

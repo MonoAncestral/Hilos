@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace Hilos
 {
-    public partial class Asesor1 : Form
+    public partial class Asesor3 : Form
     {
-
-        public Asesor1()
+        public Asesor3()
         {
             InitializeComponent();
+        }
+
+        private void Asesor3_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(824, 400);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -23,7 +27,7 @@ namespace Hilos
             if (button5.Text == "INICIAR")
                 siguienteasesor();
             else
-            if(MessageBox.Show("¿Estás seguro?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+            if (MessageBox.Show("¿Estás seguro?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 siguienteasesor();
             }
@@ -31,7 +35,7 @@ namespace Hilos
 
         public void siguienteasesor() //cuando ya fue atendido para sacarlo de la cola
         {
-            
+
             string x;
             x = Program.servicio.delcola(Program.servicio.frentea, Program.servicio.asesor, Program.servicio.atrasa);
             if (x == "-666")
@@ -42,7 +46,7 @@ namespace Hilos
             else
             {
                 label1.Text = x;
-                Hilos.Program.set1(x);
+                Hilos.Program.set3(x);
                 if (x.Contains("SC"))
                 {
                     label3.Text = "Asesoría se servicios";
@@ -57,12 +61,6 @@ namespace Hilos
                     }
                 }
             }
-        }
-
-
-        private void Asesor1_Load(object sender, EventArgs e)
-        {
-            this.Location = new Point(0, 400);
         }
     }
 }
