@@ -45,14 +45,13 @@ namespace Hilos
             hiloCaja1.Start();
 
             frmGeneral = new Form1();
-            frmGeneral.Show();
+            Application.Run(frmGeneral);
 
 
         }
             
         public static void set(string t, int id)
         {
-            MessageBox.Show(id.ToString());
             switch (id)
             {
                 case 0: frmGeneral.exe(t, frmGeneral.label7); break;
@@ -72,7 +71,7 @@ namespace Hilos
         static void asesor(int id)
         {
 
-            Application.Run(new Asesor1(3));
+            Application.Run(new Asesor1(id));
         }
 
         static void Caja1()

@@ -16,7 +16,6 @@ C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.csprojResolveAssembly
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Form1.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Formusuario.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Properties.Resources.resources
-C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.SERVICIO.resources
 C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.csproj.GenerateResource.Cache
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe.config
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\bin\Debug\Hilos.exe
@@ -85,3 +84,6 @@ C:\Users\monoa\Documents\Visual Studio 2017\Proyectos\Hilos\Hilos\obj\Debug\Hilo
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor2.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor3.resources
 C:\Users\AndresLargo\Desktop\Hilos\Hilos\Hilos\obj\Debug\Hilos.Caja1.resources
+C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Asesor1.resources
+C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.Caja1.resources
+C:\Users\salas\Documents\Hilos\Hilos\Hilos\obj\Debug\Hilos.recibo.resources

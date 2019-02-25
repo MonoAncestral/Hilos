@@ -150,9 +150,10 @@ namespace Hilos
                 Program.servicio.agregarcola(Program.servicio.id, Program.servicio.colacaja, Program.servicio.atrasc, Program.servicio.frentec);
 
             synthesizer.Volume = 100;  // 0...100
-            synthesizer.Rate = -2;     // -10...10
+            synthesizer.Rate = 1;     // -10...10
 
             // Synchronous
+
             synthesizer.SpeakAsync("SU TURNO HA SIDO ASIGNADO: " + Program.servicio.id);
             
         }

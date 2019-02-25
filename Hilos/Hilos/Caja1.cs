@@ -16,7 +16,7 @@ namespace Hilos
         public Caja1(int id )
         {
             InitializeComponent();
-            id = this.id;
+            this.id = id;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Hilos
 
         private void Caja1_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(412, 400);
+            this.Location = new Point(412*3, 750);
         }
     }
 }

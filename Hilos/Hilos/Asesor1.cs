@@ -16,13 +16,9 @@ namespace Hilos
         public Asesor1(int id )
         {
             InitializeComponent();
-            id = this.id;
+            this.id = id;
 
-            MessageBox.Show(id + "");
-            if(id != 0)
-            {
-                this.Location = new Point((412 * id), 400);
-            }
+           
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -72,7 +68,11 @@ namespace Hilos
 
         private void Asesor1_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(0, 400);
+            
+            
+                this.Location = new Point((412 * (this.id)), 600);
+            
+            
         }
     }
 }

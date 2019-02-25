@@ -26,9 +26,10 @@ namespace Hilos
             t2.Text = t;
 
             synthesizer.Volume = 100;  // 0...100
-            synthesizer.Rate = -2;     // -10...10
-            Console.Beep(3000, 500);
-            // Synchronous
+            synthesizer.Rate = 1;     // -10...10
+            Console.Beep(3000, 250);
+            Console.Beep(3000, 250);
+          
             if (t2==label7)
                 synthesizer.SpeakAsync("TURNO " + t +  ", CAJA NÚMERO 1");
             if (t2 == label8)

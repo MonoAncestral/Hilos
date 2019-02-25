@@ -53,18 +53,6 @@
     <Compile Include="Asesor1.Designer.cs">
       <DependentUpon>Asesor1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Asesor2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Asesor2.Designer.cs">
-      <DependentUpon>Asesor2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Asesor3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Asesor3.Designer.cs">
-      <DependentUpon>Asesor3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Caja1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +84,6 @@
     </Compile>
     <EmbeddedResource Include="Asesor1.resx">
       <DependentUpon>Asesor1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Asesor2.resx">
-      <DependentUpon>Asesor2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Asesor3.resx">
-      <DependentUpon>Asesor3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Caja1.resx">
       <DependentUpon>Caja1.cs</DependentUpon>
