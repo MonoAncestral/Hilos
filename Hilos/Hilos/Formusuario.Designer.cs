@@ -61,7 +61,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.cedula = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -271,7 +270,6 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button18);
             this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Controls.Add(this.cedula);
@@ -445,16 +443,6 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "INGRESE SU CÉDULA";
             // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(109, 342);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 10;
-            this.button18.Text = "button18";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click_1);
-            // 
             // Formusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,6 +506,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.Button button18;
     }
 }
